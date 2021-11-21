@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  font: 400 1rem "Roboto", sans-serif;
+}
+
+body {
+  background: #121214;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title-card {
+  font-size: 1.25rem;
+  color: #e1e1e6;
+}
+
+.description-card {
+  color: #a8a8b3;
+}
+
+header {
+  height: 7rem;
+  padding: 1.25rem;
+  background: #202024;
+}
+
+main .container {
+  max-width: 76rem;
+  margin: 0 auto;
+}
+
+main .container #challenges .section-header {
+  padding: 1.5rem 0;
+}
+
+main .container #challenges .section-header .section-title {
+  font-size: 1.25rem;
+  color: #e1e1e6;
+}
+
+main .container #challenges .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+main .container #challenges .cards .card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #202024;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+}
+
+main .container #challenges .cards .card:hover {
+  background: #29292e;
+}
+
+main .container #challenges .cards .card .background-card {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .container #challenges .cards .card .content-card {
+  padding: 1.5rem 1.38rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .container #challenges .cards .card .content-card .title-card {
+  display: inline-block;
+}
+
+main .container #challenges .cards .card .content-card .description-card {
+  margin-top: 0.625rem;
+  line-height: 1.62rem;
+}
+
+main .container #challenges .cards .card .content-card footer {
+  margin-top: 2rem;
+}
+
+main .container #challenges .cards .card .content-card footer .link-demo {
+  padding: 0.625rem 1.25rem;
+  display: inline-block;
+  background: #8257e5;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 0.312rem;
+  -webkit-transition: -webkit-filter 0.2s;
+  transition: -webkit-filter 0.2s;
+  transition: filter 0.2s;
+  transition: filter 0.2s, -webkit-filter 0.2s;
+}
+
+main .container #challenges .cards .card .content-card footer .link-demo:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+  color: #e1e1e6;
+}
+/*# sourceMappingURL=main.css.map */
