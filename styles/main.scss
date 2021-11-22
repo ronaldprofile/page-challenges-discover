@@ -89,7 +89,12 @@ main {
 
             footer {
               margin-top: 2rem;
-              .link-demo {
+
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+
+              .button {
                 padding: 0.625rem 1.25rem;
                 display: inline-block;
                 background: #8257e5;

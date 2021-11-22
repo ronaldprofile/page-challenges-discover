@@ -104,9 +104,16 @@ main .container #challenges .cards .card .content-card .description-card {
 
 main .container #challenges .cards .card .content-card footer {
   margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
 }
 
-main .container #challenges .cards .card .content-card footer .link-demo {
+main .container #challenges .cards .card .content-card footer .button {
   padding: 0.625rem 1.25rem;
   display: inline-block;
   background: #8257e5;
@@ -121,7 +128,7 @@ main .container #challenges .cards .card .content-card footer .link-demo {
   transition: filter 0.2s, -webkit-filter 0.2s;
 }
 
-main .container #challenges .cards .card .content-card footer .link-demo:hover {
+main .container #challenges .cards .card .content-card footer .button:hover {
   -webkit-filter: brightness(0.9);
           filter: brightness(0.9);
   color: #e1e1e6;
